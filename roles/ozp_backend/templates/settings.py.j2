@@ -98,23 +98,23 @@ WSGI_APPLICATION = 'ozp.wsgi.application'
 MAIN_DATABASE = 'postgresql'
 
 if MAIN_DATABASE == 'sqlite':
-	DATABASES = {
-		'default': {
-		    'ENGINE': 'django.db.backends.sqlite3',
-		    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-		}
-	}
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 elif MAIN_DATABASE == 'postgresql':
-	DATABASES= {
-		'default': {
-		    'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-		    'NAME': 'ozp',  # Or path to database file if using sqlite3.
-		    'USER': 'ozp_user',
-		    'PASSWORD': 'password',
-		    'HOST': '{{ db_fqdn }}',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-		    'PORT': '',  # Set to empty string for default.
-		}
-	}
+    DATABASES= {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+            'NAME': 'ozp',  # Or path to database file if using sqlite3.
+            'USER': 'ozp_user',
+            'PASSWORD': 'password',
+            'HOST': '{{ db_fqdn }}',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+            'PORT': '',  # Set to empty string for default.
+        }
+    }
 
 LOGGING = {
     'version': 1,
@@ -277,3 +277,17 @@ AUTHORIZATION_PLUGIN = 'default_authorization'
 # If a default agency exists, set it to the agency's short name
 DEFAULT_AGENCY = ''
 GLOBAL_SECONDS_TO_CACHE_DATA = 60 * 60 * 24  # 24 Hours
+
+# Boolean to enable/disable the use Elasticsearch use
+ES_ENABLED = {{ es_enabled }}
+ES_INDEX_NAME = 'appsmall'
+ES_TYPE_NAME = 'listings'
+ES_ID_FIELD = 'id'
+
+ES_NUMBER_OF_SHARDS = 1
+ES_NUMBER_OF_REPLICAS = 0
+
+ES_HOST = [{
+    "host": "localhost",
+    "port": 9200
+}]
