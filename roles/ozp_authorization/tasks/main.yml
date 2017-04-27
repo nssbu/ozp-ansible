@@ -1,4 +1,11 @@
 ---
+- name: Remove existing demo-auth-service-master.tar.gz
+  file:
+    path: "{{ download_dir }}/demo-auth-service-master.tar.gz"
+    state: absent
+  become: true
+  become_user: ozp
+  
 # Note: no offline option available for this project
 - name: Download source
   get_url:
