@@ -199,7 +199,9 @@ REST_FRAMEWORK = {
         'ozpiwc.renderers.ApplicationResourceRenderer',
         'ozpiwc.renderers.ApplicationListResourceRenderer',
         'ozpiwc.renderers.IntentResourceRenderer',
-        'ozpiwc.renderers.IntentListResourceRenderer'
+        'ozpiwc.renderers.IntentListReso+ES_RECOMMEND_USER = 'es_recommend_user'
+ +ES_RECOMMEND_CONTENT = 'es_recommend_content'
+ +ES_RECOMMEND_TYPE = 'recommend'urceRenderer'
     )
 }
 
@@ -244,7 +246,9 @@ OZP = {
         # name of the group in the auth service for beta users
         'BETA_USER_GROUP_NAME': 'OZP_BETA_USER',
         # name of the project in the auth serice
-        'PROJECT_NAME': 'OZP',
+        'PROJECT_NAME': 'OZP',+ES_RECOMMEND_USER = 'es_recommend_user'
+ +ES_RECOMMEND_CONTENT = 'es_recommend_content'
+ +ES_RECOMMEND_TYPE = 'recommend'
         # seconds to treat cached authorization data as valid before trying to
         # update it
         # max value: 60*60*24 (1 day)
@@ -266,6 +270,10 @@ ES_ENABLED = bool(os.getenv('ES_ENABLED', {{ es_enabled }}))
 ES_INDEX_NAME = 'appsmall'
 ES_TYPE_NAME = 'listings'
 ES_ID_FIELD = 'id'
+
+ES_RECOMMEND_USER = 'es_recommend_user'
+ES_RECOMMEND_CONTENT = 'es_recommend_content'
+ES_RECOMMEND_TYPE = 'recommend'
 
 ES_NUMBER_OF_SHARDS = 1
 ES_NUMBER_OF_REPLICAS = 0
