@@ -339,7 +339,7 @@ AWS_MEDIA_STORAGE_BUCKET_NAME = 'ozp-media'
 AWS_MEDIA_S3_CUSTOM_DOMAIN = '{}.s3-website-us-east-1.amazonaws.com'.format(AWS_MEDIA_STORAGE_BUCKET_NAME)
 AWS_MEDIA_DEFAULT_ACL = 'private'  # http://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html
 # AWS_MEDIA_S3_CUSTOM_DOMAIN = None  # Make AWS_MEDIA_S3_CUSTOM_DOMAIN to None to get Presigned URLS
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join('/mnt/nfs/ozp_media/')
 # AWS_QUERYSTRING_AUTH = False
 # AWS_S3_SIGNATURE_VERSION = 's3v4'  # Presigned URLs
 
