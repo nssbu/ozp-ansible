@@ -3,3 +3,4 @@ roles/offline/files/*.tgz
 vagrant_test_box
 *.swp
 .vagrant
+/.project
