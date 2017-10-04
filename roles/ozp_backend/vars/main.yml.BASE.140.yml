@@ -11,6 +11,4 @@ jenkins_build_number: "lastSuccessfulBuild"
 # Optionally re-create the database
 reset_database: true
 # use a static settings.py file instead of a templated one
-use_static_settings_file: true
-# Enable Elasticsearch  > False/True
-es_enabled: "False"
+use_static_settings_file: false
