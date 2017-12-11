@@ -1,0 +1,4 @@
+- Fix the ansible java download task failure.
+  Maybe just clone the AML ozp-ansible instead, 
+  since it doesn't do all the DCGS java stuff
+- How do you make and deploy code changes? Host Jenkins somewhere?
