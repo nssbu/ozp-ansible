@@ -3,6 +3,30 @@
     "name": "dummy auth server",
     "users": [
         {
+            "dn": "C=AO,ST=Oceania,L=Default City,O=Minitrue,CN=Winston Smith wsmith,emailAddress=none@none.com",
+            "dutyorg": "Minitrue",
+            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
+            "formalAccesses": ["SIERRA", "TANGO"],
+            "visas": ["NOVEMBER"],
+            "groups": ["cn=OZP_ORG_STEWARD,ou=ABC,ou=DEF,o=X.Y.Z"]
+        },
+        {
+            "dn": "Julia Dixon jdixon",
+            "dutyorg": "Minitrue",
+            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
+            "formalAccesses": ["SIERRA"],
+            "visas": [],
+            "groups": ["cn=OZP_ORG_STEWARD,ou=ABC,ou=DEF,o=X.Y.Z"]
+        },
+        {
+            "dn": "O'brien obrien",
+            "dutyorg": "Minipax",
+            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
+            "formalAccesses": ["SIERRA", "TANGO", "GOLF", "HOTEL"],
+            "visas": ["NOVEMBER"],
+            "groups": ["cn=OZP_ORG_STEWARD,ou=ABC,ou=DEF,o=X.Y.Z"]
+        },
+        {
             "dn": "Big Brother bigbrother",
             "dutyorg": "Minipax",
             "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
@@ -19,47 +43,7 @@
             "groups": ["cn=OZP_APPS_MALL_STEWARD,ou=ABC,ou=DEF,o=X.Y.Z"]
         },
         {
-            "dn": "Bettafish bettafish",
-            "dutyorg": "Miniluv",
-            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
-            "formalAccesses": ["SIERRA", "TANGO", "GOLF", "HOTEL"],
-            "visas": ["NOVEMBER"],
-            "groups": ["cn=OZP_APPS_MALL_STEWARD,ou=ABC,ou=DEF,o=X.Y.Z", "cn=OZP_BETA_USER,ou=ABC,ou=DEF,o=X.Y.Z"]
-        },
-        {
-            "dn": "Winston Smith wsmith",
-            "dutyorg": "Minitrue",
-            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
-            "formalAccesses": ["SIERRA", "TANGO"],
-            "visas": ["NOVEMBER"],
-            "groups": ["cn=OZP_ORG_STEWARD,ou=ABC,ou=DEF,o=X.Y.Z"]
-        },
-        {
-            "dn": "Julia Dixon jdixon",
-            "dutyorg": "Minitrue",
-            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
-            "formalAccesses": ["SIERRA"],
-            "visas": [],
-            "groups": ["cn=OZP_ORG_STEWARD,ou=ABC,ou=DEF,o=X.Y.Z"]
-        },
-        {
-            "dn": "OBrien obrien",
-            "dutyorg": "Minipax",
-            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
-            "formalAccesses": ["SIERRA", "TANGO", "GOLF", "HOTEL"],
-            "visas": ["NOVEMBER"],
-            "groups": ["cn=OZP_ORG_STEWARD,ou=ABC,ou=DEF,o=X.Y.Z"]
-        },
-        {
             "dn": "Aaronson aaronson",
-            "dutyorg": "Miniluv",
-            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET"],
-            "formalAccesses": [],
-            "visas": ["NOVEMBER"],
-            "groups": []
-        },
-        {
-            "dn": "Hodor hodor",
             "dutyorg": "Miniluv",
             "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET"],
             "formalAccesses": [],
@@ -75,23 +59,7 @@
             "groups": []
         },
         {
-            "dn": "Tammy tammy",
-            "dutyorg": "Minitrue",
-            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET"],
-            "formalAccesses": [],
-            "visas": ["NOVEMBER"],
-            "groups": []
-        },
-        {
             "dn": "Rutherford rutherford",
-            "dutyorg": "Miniplen",
-            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET"],
-            "formalAccesses": [],
-            "visas": [],
-            "groups": []
-        },
-        {
-            "dn": "Noah noah",
             "dutyorg": "Miniplen",
             "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET"],
             "formalAccesses": [],
@@ -107,23 +75,7 @@
             "groups": []
         },
         {
-            "dn": "Abe abe",
-            "dutyorg": "Minipax",
-            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
-            "formalAccesses": [],
-            "visas": ["NOVEMBER"],
-            "groups": []
-        },
-        {
             "dn": "Tparsons tparsons",
-            "dutyorg": "Minipax",
-            "clearances": ["UNCLASSIFIED"],
-            "formalAccesses": [],
-            "visas": [],
-            "groups": []
-        },
-        {
-            "dn": "Jonsnow jsnow",
             "dutyorg": "Minipax",
             "clearances": ["UNCLASSIFIED"],
             "formalAccesses": [],
@@ -137,22 +89,6 @@
             "formalAccesses": ["SIERRA", "TANGO", "GOLF", "HOTEL"],
             "visas": ["NOVEMBER"],
             "groups": []
-        },
-        {
-            "dn": "Johnson johnson",
-            "dutyorg": "Minipax",
-            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
-            "formalAccesses": ["SIERRA", "TANGO", "GOLF", "HOTEL"],
-            "visas": ["NOVEMBER"],
-            "groups": []
-        },
-        {
-            "dn": "BetaRayBill betaraybill",
-            "dutyorg": "Miniluv",
-            "clearances": ["UNCLASSIFIED", "CONFIDENTIAL", "SECRET", "TOP SECRET"],
-            "formalAccesses": ["SIERRA", "TANGO", "GOLF", "HOTEL"],
-            "visas": ["NOVEMBER"],
-            "groups": ["cn=OZP_BETA_USER,ou=ABC,ou=DEF,o=X.Y.Z"]
         }
     ]
 }
